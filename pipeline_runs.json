@@ -1,0 +1,250 @@
+[
+  {
+    "run_id": "RUN_20260513_114952",
+    "started_at": "2026-05-13T11:49:52.256829",
+    "status": "success",
+    "stages": [
+      {
+        "layer": "bronze",
+        "tables": [
+          {
+            "table": "customers",
+            "layer": "bronze",
+            "rows": 100000,
+            "path": "delta/bronze/customers",
+            "elapsed_s": 41.77,
+            "status": "success"
+          },
+          {
+            "table": "products",
+            "layer": "bronze",
+            "rows": 500,
+            "path": "delta/bronze/products",
+            "elapsed_s": 18.05,
+            "status": "success"
+          },
+          {
+            "table": "transactions",
+            "layer": "bronze",
+            "rows": 1000000,
+            "path": "delta/bronze/transactions",
+            "elapsed_s": 54.01,
+            "status": "success"
+          },
+          {
+            "table": "returns",
+            "layer": "bronze",
+            "rows": 79760,
+            "path": "delta/bronze/returns",
+            "elapsed_s": 10.5,
+            "status": "success"
+          }
+        ]
+      },
+      {
+        "layer": "silver",
+        "tables": [
+          {
+            "table": "customers",
+            "layer": "silver",
+            "raw_rows": 100000,
+            "clean_rows": 0,
+            "dropped_rows": 100000,
+            "drop_pct": 100.0,
+            "elapsed_s": 14.35
+          },
+          {
+            "table": "products",
+            "layer": "silver",
+            "raw_rows": 500,
+            "clean_rows": 500,
+            "dropped_rows": 0,
+            "drop_pct": 0.0,
+            "elapsed_s": 11.4
+          },
+          {
+            "table": "transactions",
+            "layer": "silver",
+            "raw_rows": 1000000,
+            "clean_rows": 0,
+            "dropped_rows": 1000000,
+            "drop_pct": 100.0,
+            "elapsed_s": 18.53
+          },
+          {
+            "table": "returns",
+            "layer": "silver",
+            "raw_rows": 79760,
+            "clean_rows": 0,
+            "dropped_rows": 79760,
+            "drop_pct": 100.0,
+            "elapsed_s": 12.14
+          }
+        ]
+      },
+      {
+        "layer": "gold",
+        "tables": [
+          {
+            "table": "customer_metrics",
+            "layer": "gold",
+            "rows": 0,
+            "elapsed_s": 21.21
+          },
+          {
+            "table": "monthly_revenue",
+            "layer": "gold",
+            "rows": 0,
+            "elapsed_s": 7.96
+          },
+          {
+            "table": "category_performance",
+            "layer": "gold",
+            "rows": 0,
+            "elapsed_s": 13.69
+          },
+          {
+            "table": "cohort_retention",
+            "layer": "gold",
+            "rows": 0,
+            "elapsed_s": 6.56
+          }
+        ]
+      }
+    ],
+    "data_generation": {
+      "customers": 100000,
+      "products": 500,
+      "transactions": 1000000,
+      "returns": 79760,
+      "total_rows": 1180260,
+      "elapsed_s": 12.72
+    },
+    "completed_at": "2026-05-13T11:54:13.909248",
+    "total_elapsed_s": 261.65
+  },
+  {
+    "run_id": "RUN_20260514_105546",
+    "started_at": "2026-05-14T10:55:46.504922",
+    "status": "success",
+    "stages": [
+      {
+        "layer": "bronze",
+        "tables": [
+          {
+            "table": "customers",
+            "layer": "bronze",
+            "rows": 100000,
+            "path": "delta/bronze/customers",
+            "elapsed_s": 20.24,
+            "status": "success"
+          },
+          {
+            "table": "products",
+            "layer": "bronze",
+            "rows": 500,
+            "path": "delta/bronze/products",
+            "elapsed_s": 5.91,
+            "status": "success"
+          },
+          {
+            "table": "transactions",
+            "layer": "bronze",
+            "rows": 1000000,
+            "path": "delta/bronze/transactions",
+            "elapsed_s": 13.02,
+            "status": "success"
+          },
+          {
+            "table": "returns",
+            "layer": "bronze",
+            "rows": 79760,
+            "path": "delta/bronze/returns",
+            "elapsed_s": 9.19,
+            "status": "success"
+          }
+        ]
+      },
+      {
+        "layer": "silver",
+        "tables": [
+          {
+            "table": "customers",
+            "layer": "silver",
+            "raw_rows": 100000,
+            "clean_rows": 100000,
+            "dropped_rows": 0,
+            "drop_pct": 0.0,
+            "elapsed_s": 18.85
+          },
+          {
+            "table": "products",
+            "layer": "silver",
+            "raw_rows": 500,
+            "clean_rows": 500,
+            "dropped_rows": 0,
+            "drop_pct": 0.0,
+            "elapsed_s": 14.22
+          },
+          {
+            "table": "transactions",
+            "layer": "silver",
+            "raw_rows": 1000000,
+            "clean_rows": 997010,
+            "dropped_rows": 2990,
+            "drop_pct": 0.3,
+            "elapsed_s": 26.44
+          },
+          {
+            "table": "returns",
+            "layer": "silver",
+            "raw_rows": 79760,
+            "clean_rows": 79760,
+            "dropped_rows": 0,
+            "drop_pct": 0.0,
+            "elapsed_s": 14.31
+          }
+        ]
+      },
+      {
+        "layer": "gold",
+        "tables": [
+          {
+            "table": "customer_metrics",
+            "layer": "gold",
+            "rows": 100000,
+            "elapsed_s": 15.7
+          },
+          {
+            "table": "monthly_revenue",
+            "layer": "gold",
+            "rows": 36,
+            "elapsed_s": 7.11
+          },
+          {
+            "table": "category_performance",
+            "layer": "gold",
+            "rows": 10,
+            "elapsed_s": 13.55
+          },
+          {
+            "table": "cohort_retention",
+            "layer": "gold",
+            "rows": 366,
+            "elapsed_s": 19.13
+          }
+        ]
+      }
+    ],
+    "data_generation": {
+      "customers": 100000,
+      "products": 500,
+      "transactions": 1000000,
+      "returns": 79760,
+      "total_rows": 1180260,
+      "elapsed_s": 7.91
+    },
+    "completed_at": "2026-05-14T10:59:00.445945",
+    "total_elapsed_s": 193.94
+  }
+]

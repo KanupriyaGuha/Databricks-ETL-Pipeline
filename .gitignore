@@ -1,0 +1,14 @@
+# Raw data CSVs — too large for GitHub
+data/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Delta Bronze and Silver layers — large, not needed for dashboard
+delta/bronze/
+delta/silver/
+
+# macOS
+.DS_Store
